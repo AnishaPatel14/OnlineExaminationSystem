@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam System</title>
+     <link rel="stylesheet" href="style.css"> 
+     <style>
+     * {
+    	font-family: sans-serif;
+		}
+     	header{
+     		display: flex;
+     		justify-content: space-around;
+     	}
+     	.container h2{
+     		color: white;
+     	}
+     	nav{
+     		display: flex;
+     		align-items: center;
+     		justify-content: center;
+     	}
+     	.container{
+     		background: rgb(101 94 94 / 32%);
+     		height: 35%;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+     	}
+     	footer{
+     		height:50px;
+     		font-size:0.9rem;
+     		text-align: center;
+     	}
+     </style>
+</head>
+<body>
+
+    <!-- 🔹 Header Section -->
+    <header>
+        <h1>Online Examination System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 Main Content -->
+    <div class="container">
+        <h2>Welcome to Online Exam</h2>
+        <p>Enhance your knowledge with exciting quizzes!</p>
+        <div class="buttons">
+            <button onclick="location.href='register.jsp'">Register</button>
+            <button onclick="location.href='login.jsp'">login</button>
+        </div>
+    </div>
+
+    <!-- 🔹 Footer Section -->
+    <footer>
+        &copy; 2025 Online Exam System | All Rights Reserved by Anisha & Deepika
+    </footer>
+
+   <!-- <script src="script.js"></script> -->
+
+</body>
+</html>

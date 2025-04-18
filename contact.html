@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #758697;
+            cursor: pointer;
+            background: url('images/img2.jpg');
+        }
+        
+        /* Header */
+        header {
+            background-color: #a0a9b8;
+            color: rgb(199, 147, 147);
+            padding: 5px;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        nav ul li .active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        /* Contact Banner */
+        .contact-banner {
+            text-align: center;
+            background-color: #dadee4;
+            color: rgb(78, 72, 72);
+            padding: 30px 0;
+        }
+        
+        .contact-banner h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+        
+        .contact-banner p {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+        
+        /* Left Side (Contact Info) */
+        .contact-info {
+            width: 40%;
+        }
+        
+        .contact-info h2 {
+            color: #0a192f;
+        }
+        
+        .contact-info p {
+            color: #606060;
+            font-size: 18px;
+        }
+        
+        .info-box {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+        
+        /* Right Side (Contact Form) */
+        .contact-form {
+            width: 50%;
+            background-color: rgb(212, 196, 196);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(26, 20, 20, 0.1);
+        }
+        
+        .contact-form h2 {
+            color: #061833;
+            text-align: center;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #786d6d;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .contact-form textarea {
+            height: 100px;
+            resize: none;
+        }
+        
+        .contact-form button {
+            width: 100%;
+            background-color: #5a9a7c;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+        .contact-form button:hover {
+            background-color: #159f5a;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #142d54;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .contact-info, .contact-form {
+                width: 90%;
+            }
+        }
+        </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+		<section class="contact-banner">
+        	<h1>Contact Us</h1>
+       	    <p>Home / Contact Us</p>
+    	</section>
+    
+
+    <section class="contact-container">
+    
+    	
+    
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>If you have any questions, feel free to reach out to us.</p>
+            <div class="info-box">
+                <p><strong>📍 Address:</strong> JIT, Borawan</p>
+                <p><strong>📧 Email:</strong> JIT@gmail.com</p>
+                <p><strong>📞 Phone:</strong> +911234567890</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Drop Us a Line</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Enter E-Mail Address" required>
+                <input type="text" placeholder="Write your subject" required>
+                <textarea placeholder="Write your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Quiz System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
